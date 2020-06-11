@@ -1,4 +1,4 @@
-package main
+package createHostnameResolution
 
 import (
 	"encoding/json"
