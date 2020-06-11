@@ -1,6 +1,3 @@
-# burpsuite
-## Config Hostname Resolution
-Create hostname resolution
-`createHostnameResolution -hosts hosts`
-Created file hostname `hostname_resolution.json`
-Project Option -> Hostname Resolutions -> Load Options -> Pick to `hostname_resolution.json`
+# Config Hostname Resolution (JSON)
+Create hostname resolution by following command `createHostnameResolution -hosts hosts`. The hosts file configuration for Burpsuite is created as name `hostname_resolution.json`.
+Lets importing results, head to Project Option -> Hostname Resolutions -> select Load Options -> Choose the JSON file `hostname_resolution.json`.
