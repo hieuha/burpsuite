@@ -1,4 +1,4 @@
-package createHostnameResolution
+package main
 
 import (
 	"encoding/json"
@@ -58,8 +58,12 @@ func main() {
 
 	hostsContent, err := ioutil.ReadFile(hostsPath)
 	if err == nil {
+		outFile := "hostname_resolution.json"
 		jsonFile := parse(hostsContent)
-		_ = ioutil.WriteFile("hostname_resolution.json", jsonFile, 0644)
+		_ = ioutil.WriteFile(outFile, jsonFile, 0644)
+		fmt.Println("Created file hostname", outFile)
+		os.Exit(0)
+		return
 	}
 	fmt.Println(fmt.Sprintf("File %s not found", hostsPath))
 	os.Exit(1)
