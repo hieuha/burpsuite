@@ -1,0 +1,4 @@
+*.json
+*.txt
+.idea/
+.idea/*
